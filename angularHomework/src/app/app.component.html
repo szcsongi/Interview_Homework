@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+</head>
+<body>
+    <main>
+        <h1>Interview Homework</h1>
+
+        <input type="text" name="api_input" [(ngModel)]="api_input">
+        <br>
+        <button type="button" (click)="SendInputToAPI()">Send input to API</button>
+        <br>
+        <br>
+        <br>
+        <textarea rows="4" cols="50" name="comment" form="simpleForm">{{api_output.result}} </textarea>
+        <br>
+    </main>
+</body>
+
+<router-outlet></router-outlet>
